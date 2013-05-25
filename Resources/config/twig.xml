@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="ewz_redactor_editor.twig.form_extension" class="EWZ\Bundle\RedactorEditorBundle\Twig\Extension\RedactorEditorExtension">
+            <tag name="twig.extension" />
+            <argument>%ewz_redactor_editor.options.autoinclude%</argument>
+            <argument>%ewz_redactor_editor.options.base_path%</argument>
+        </service>
+    </services>
+</container>
