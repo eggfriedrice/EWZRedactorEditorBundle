@@ -21,7 +21,7 @@ class RedactorEditorExtension extends \Twig_Extension
 
     public function __construct($autoInclude, $basePath)
     {
-        $this->editorIncluded = $autoInclude;
+        $this->editorIncluded = !$autoInclude;
         $this->basePath = rtrim($basePath, '/');
     }
 
@@ -57,7 +57,7 @@ class RedactorEditorExtension extends \Twig_Extension
             return;
         }
 
-        if ($this->editorIncluded) {
+        if (!$this->editorIncluded) {
             $path = $this->environment
                 ->getExtension('assets')
                 ->getAssetUrl($this->basePath);
@@ -65,7 +65,7 @@ class RedactorEditorExtension extends \Twig_Extension
             echo sprintf('<link href="%s/redactor.css" media="all" rel="stylesheet" type="text/css" />', $path);
             echo sprintf('<script src="%s/redactor.js" type="text/javascript"></script>', $path);
 
-            $this->editorIncluded = false;
+            $this->editorIncluded = true;
         }
     }
 }
