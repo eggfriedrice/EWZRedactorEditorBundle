@@ -1,7 +1,7 @@
 {% block redactor_editor_widget %}
     {% spaceless %}
     <textarea {{ block('widget_attributes') }}>{{ value }}</textarea>
-    {{ include_redactor_editor() }}
+    {{ ewz_include_redactor_editor() }}
     <script type="text/javascript">
         $(function () {
             $('#{{ id }}').redactor({{ redactor_settings|json_encode|raw }});

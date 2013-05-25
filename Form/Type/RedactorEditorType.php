@@ -42,6 +42,6 @@ class RedactorEditorType extends AbstractType
      */
     public function getName()
     {
-        return 'redactor_editor';
+        return 'ewz_redactor_editor';
     }
 }

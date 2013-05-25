@@ -38,7 +38,7 @@ class RedactorEditorExtension extends \Twig_Extension
      */
     public function getName()
     {
-        return 'redactor_editor';
+        return 'ewz_redactor_editor';
     }
 
     /**
@@ -47,7 +47,7 @@ class RedactorEditorExtension extends \Twig_Extension
     public function getFunctions()
     {
         return array(
-            'include_redactor_editor' => new \Twig_Function_Method($this, 'includeRedactorEditor', array('is_safe' => array('html'))),
+            'ewz_include_redactor_editor' => new \Twig_Function_Method($this, 'includeRedactorEditor', array('is_safe' => array('html'))),
         );
     }
 
