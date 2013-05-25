@@ -6,7 +6,7 @@
 
     <services>
         <service id="ewz_redactor_editor.form.type.redactor_editor" class="EWZ\Bundle\RedactorEditorBundle\Form\Type\RedactorEditorType" scope="request">
-            <tag name="form.type" alias="redactor_editor" />
+            <tag name="form.type" alias="ewz_redactor_editor" />
         </service>
     </services>
 </container>
