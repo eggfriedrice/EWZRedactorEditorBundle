@@ -12,7 +12,7 @@ It automatically register ``redactor_editor`` form type.
 ```php
 /* @var $builder \Symfony\Component\Form\FormBuilderInterface */
 
-$builder->add('body', 'redactor_editor', array(
+$builder->add('body', 'ewz_redactor_editor', array(
     'options' => array()
 ));
 ```
