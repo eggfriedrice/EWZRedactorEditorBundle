@@ -22,7 +22,7 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->booleanNode('autoinclude')->defaultTrue()->end()
+                ->booleanNode('auto_include')->defaultTrue()->end()
                 ->scalarNode('base_path')->defaultValue('bundles/ewzredactoreditor/redactor')->end()
             ->end()
         ->end();

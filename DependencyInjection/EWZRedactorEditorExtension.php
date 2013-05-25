@@ -31,7 +31,7 @@ class EWZRedactorEditorExtension extends Extension
 
     private function registerRedactorEditorParameters($config, ContainerBuilder $container)
     {
-        $container->setParameter('ewz_redactor_editor.options.autoinclude', !$config['autoinclude']);
+        $container->setParameter('ewz_redactor_editor.options.auto_include', $config['auto_include']);
         $container->setParameter('ewz_redactor_editor.options.base_path', $config['base_path']);
     }
 }

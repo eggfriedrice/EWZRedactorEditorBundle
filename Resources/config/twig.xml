@@ -7,7 +7,7 @@
     <services>
         <service id="ewz_redactor_editor.twig.form_extension" class="EWZ\Bundle\RedactorEditorBundle\Twig\Extension\RedactorEditorExtension">
             <tag name="twig.extension" />
-            <argument>%ewz_redactor_editor.options.autoinclude%</argument>
+            <argument>%ewz_redactor_editor.options.auto_include%</argument>
             <argument>%ewz_redactor_editor.options.base_path%</argument>
         </service>
     </services>
